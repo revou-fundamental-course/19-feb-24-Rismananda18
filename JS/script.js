@@ -3,7 +3,7 @@ function replaceName(){
     document.getElementById("ubah-nama").innerHTML = name
 }
 
-document.getElementById("tombol"),addEventListener("click", function() {replaceName()})
+document.getElementById("tombol").addEventListener("click", function() {replaceName()})
 
 
 
@@ -32,3 +32,4 @@ function setsenderUI(name, birthdate, gender, messages){
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-messages").innerHTML = messages;
 }
+
