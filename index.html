@@ -23,7 +23,7 @@
         <button type="button" id="tombol">Submit</button>
         <p><b>Ini adalah website pertama saya</b></p>
         <div class="image">
-            <img src="./assets/img3.jpg" alt="" srcset=""  style="width: 1200px; height: 500px;">
+            <img src="./assets/img3.jpg" alt="" srcset="" >
         </div>
     </div>
 
@@ -52,24 +52,31 @@
          <h1>Message Us</h1>
         <div class="inquiry-box">
             <form class="inquiry-form" name="message-form" onsubmit="return validateform()">
-            Nama: <input placeholder="Nama" type="text" name="full-name" style="display: inline-block; margin-left: 5px;" />
+        <div class="form-grup">
+            <label for="">Nama:</label> 
+            <input placeholder="Nama" type="text" name="full-name" style="display: inline-block; margin-left: 5px;" />
             <br />
+        </div>
 
-            tanggal-lahir:
+        <div class="form-grup">
+            <label for="">tanggal-lahir:</label>
             <input type="date" name="birth-date" >
             <br />
+        </div>
 
-            Jenis Kelamin:
+        <div class="form-grup">
+            <label for="">Jenis Kelamin:</label>
             <input type="radio" name="gender" id="male" value="Male">
-            <label for="male">Laki-laki</label>
+            <label for="male">Male</label>
             <input type="radio" name="gender" id="female" value="Female">
-            <label for="female">Perempuan</label>
+            <label for="female">Female</label>
             <br />
-
-            Pesan:
+        </div>
+        <div class="form-grup">
+            <label for="">Pesan:</label>
             <textarea placeholder="pesan" name="messages" id="" cols="30" rows="10"></textarea>
             <br/>
-
+        </div>
             <button type="button" id="send-message-form">Submit</button>
             </form>
 
@@ -83,5 +90,9 @@
     </section>
     
     <script src="JS/script.js"></script>
+
+    <div class="footer">
+        <p>created By : Rismananda Aditya</p>
+    </div>
 </body>
 </html>

@@ -10,8 +10,8 @@ header {
 }
 
 .logo {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -61,12 +61,19 @@ header {
 }
 
 .container-home .image{
+    align-items: centers;
     display: flex;
     width: fit-content;
     text-align: center;
 }
 
+.image{
+    width: 100%;
+    max-width: 1200px;
+}
+
 .container-circle{
+    align-items: center;
     padding: 30px;
     margin-bottom: 40px;
 }
@@ -100,33 +107,65 @@ header {
  }
 
 .inquiry-box {
-    height: 70vh;
+    height: 100vh;
     width: auto;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
+
+.form-grup {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: left;
+  }
+  
+  input {
+    width: calc(100% - 120px);
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button{
+    background-color: white;
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+  }
 
 .inquiry-form {
 
-    width:500px;
+    width:auto;
     height: 200px;
+    padding: 0 60px;
 
 }
 
 .output{
-    width: 500px;
+    padding: 10px;
+    width: auto;
     height: 200px;
     border: 2px solid black;
-    margin-left: 50px;
 }
 
-@media only screen and(max-width: 400px){
+.footer {
+    display: flex;
+    text-align: center;
+    background-color: grey;
+    margin-left: 30px;
+    border: 2px black;
+}
+
+@media (max-width: 500px){
     .image img{
-        width: auto;
-        height: auto;
-    }
-    h1{
-        font-size: 10px;
+        width: 100%;
     }
 
     .logo {
@@ -140,4 +179,14 @@ header {
     .navigation .link a{
         flex-direction: column;
     }
+
+    .inquiry-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .our-office{
+        flex-direction: column;
+    }
+
+    
 }
